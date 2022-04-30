@@ -51,10 +51,10 @@ const Planets = () => {
                     src="https://i2.wp.com/eos.org/wp-content/uploads/2020/12/chandler-wobble-mars.jpg?fit=820%2C615"
                   />
                   <h3 className="text-2xl font-bold capitalize">
-                    {" "}
+                
                     {item.name}
                   </h3>
-                  <h3 className="text-md font-medium">
+                  <h3 className="text-md font-normal">
                     climate: {item.climate}
                   </h3>
                   <h3 className="text-sm font-light text-gray-600">
@@ -66,38 +66,37 @@ const Planets = () => {
                 </section>
               ))}
             </section>
-
-            <ReactPaginate
-              previousLabel={"previous"}
-              nextLabel={page >= 6 ? "last" : "next"}
-              pageCount={6}
-              breakLabel={"..."}
-              marginPagesDisplayed={2}
-              pageRangeDisplayed={2}
-              onPageChange={handlePageClick}
-              containerClassName={"flex items-center justify-center"}
-              pageClassName={
-                "border p-3 m-2 rounded-md cursor-pointer hover:bg-gray-200"
-              }
-              pageLinkClassName={"font-bold "}
-              previousClassName={
-                "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none "
-              }
-              previousLinkClassName={
-                "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
-              }
-              nextClassName={
-                "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
-              }
-              nextLinkClassName={
-                "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
-              }
-              breakClassName={""}
-              breakLinkClassName={""}
-              // activeLinkClassName={"bg-gray-200"}
-              activeClassName={"bg-gray-200"}
-              forcePage={page - 1}
-            />
+              <ReactPaginate
+                previousLabel={"previous"}
+                nextLabel={page >= 6 ? "last" : "next"}
+                pageCount={6}
+                breakLabel={"..."}
+                marginPagesDisplayed={2}
+                pageRangeDisplayed={2}
+                onPageChange={handlePageClick}
+                containerClassName={"flex items-center justify-center flex-wrap"}
+                pageClassName={
+                  "border p-3 m-2 rounded-md cursor-pointer hover:bg-gray-200"
+                }
+                pageLinkClassName={"font-bold "}
+                previousClassName={
+                  "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none "
+                }
+                previousLinkClassName={
+                  "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
+                }
+                nextClassName={
+                  "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
+                }
+                nextLinkClassName={
+                  "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none outline-none"
+                }
+                breakClassName={""}
+                breakLinkClassName={""}
+                // activeLinkClassName={"bg-gray-200"}
+                activeClassName={"bg-gray-200"}
+                forcePage={page - 1}
+              />
           </section>
         </>
       ) : (

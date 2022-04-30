@@ -70,7 +70,7 @@ const People = () => {
               marginPagesDisplayed={2}
               pageRangeDisplayed={2}
               onPageChange={handlePageClick}
-              containerClassName={"flex items-center justify-center"}
+              containerClassName={"flex items-center justify-center flex-wrap"}
               pageClassName={
                 "border p-3 m-2 rounded-md cursor-pointer hover:bg-gray-200"
               }
