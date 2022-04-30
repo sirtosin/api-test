@@ -74,7 +74,7 @@ const Planets = () => {
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={2}
                 onPageChange={handlePageClick}
-                containerClassName={"flex items-center justify-center flex-wrap w-[300px] p-6"}
+                containerClassName={"flex items-center justify-center flex-wrap p-6"}
                 pageClassName={
                   "border p-3 m-2 rounded-md cursor-pointer hover:bg-gray-200"
                 }
